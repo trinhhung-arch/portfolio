@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trịnh Quốc Khánh Hùng — Software Engineer in Training</title>
+<meta name="description" content="Portfolio of Trịnh Quốc Khánh Hùng — backend-focused software engineering student.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#home">hung<span class="logo-dot">.</span>dev</a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section id="home" class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <p class="mono-tag">&gt; whoami</p>
+        <h1>Trịnh Quốc Khánh Hùng</h1>
+        <p class="hero-desc">Third-year Software Engineering student at FPT University. Most days I'm deep in Java, Spring Boot, and PostgreSQL.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-hidden="false">
+        <div class="hero-card-photo">
+          <img src="assets/profile.webp" alt="Trịnh Quốc Khánh Hùng">
+        </div>
+        <dl class="hero-stats">
+          <div class="hero-stat">
+            <dt>Program</dt>
+            <dd>SE, FPT University (3-year track)</dd>
+          </div>
+          <div class="hero-stat">
+            <dt>Graduating</dt>
+            <dd>December 2027</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="about">
+    <div class="wrap">
+      <h2><span class="mono-tag">01</span> About</h2>
+      <div class="about-grid">
+        <p>
+          I'm on FPT University's accelerated three-year Software Engineering track — started
+          September 2024, based at the Hòa Lạc campus, graduating December 2027. Java and Spring
+          Boot are where most of my hours go.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="projects">
+    <div class="wrap">
+      <h2><span class="mono-tag">02</span> Projects</h2>
+
+      <div class="project-grid" id="projectGrid">
+        <!-- Cards are rendered here by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="skills">
+    <div class="wrap">
+      <h2><span class="mono-tag">03</span> Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul class="chip-list">
+            <li>Java 21</li><li>Spring Boot</li><li>Spring MVC</li><li>JSP / Servlet</li>
+            <li>RabbitMQ</li><li>Redis</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Databases</h3>
+          <ul class="chip-list">
+            <li>PostgreSQL</li><li>SQL Server</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Security</h3>
+          <ul class="chip-list">
+            <li>JWT</li><li>TOTP 2FA</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>DevOps &amp; tools</h3>
+          <ul class="chip-list">
+            <li>Docker</li><li>GitHub Actions (CI)</li><li>k6</li>
+            <li>Git &amp; GitHub</li><li>NetBeans</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2><span class="mono-tag">04</span> Contact</h2>
+        <p>Open to internships, freelance Java/PostgreSQL work, and conversations about backend engineering.</p>
+        <ul class="contact-links">
+          <li><a href="mailto:hungckfs2@gmail.com">hungckfs2@gmail.com</a></li>
+          <li><a href="https://github.com/trinhhung-arch" target="_blank" rel="noopener">github.com/trinhhung-arch</a></li>
+          <li><span>Freelancer.com — hungckfs2</span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Trịnh Quốc Khánh Hùng. Built with HTML, CSS, and vanilla JavaScript.</p>
+  </div>
+</footer>
+
+<!-- ===================== MODAL ===================== -->
+<div class="modal-backdrop" id="modalBackdrop" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" id="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close project details">&times;</button>
+    <p class="mono-tag" id="modalStatus"></p>
+    <h3 id="modalTitle"></h3>
+    <p id="modalBlurb"></p>
+    <ul class="chip-list" id="modalTech"></ul>
+    <p id="modalDetails"></p>
+    <div class="modal-links" id="modalLinks"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
